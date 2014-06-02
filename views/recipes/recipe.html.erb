@@ -1,0 +1,22 @@
+<div class="recipe_info">
+
+<h1><%= @title %></h1>
+
+<h3>Description</h3>
+  <p>
+    <%= @description %>
+  </p>
+
+<h3>Ingredients</h3>
+  <ol>
+    <% @ingredients.each do |ingredient| %>
+      <li> <%= ingredient %></li>
+    <% end %>
+  </ol>
+
+<h3>Instructions</h3>
+  <p>
+    <%= @instructions %>
+  </p>
+
+</div>
